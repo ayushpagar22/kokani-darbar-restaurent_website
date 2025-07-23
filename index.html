@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kokani Darbar Restaurant - Authentic Indian & Maxican Cuisine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen bg-amber-50">
+    <!-- Header -->
+    <header class="bg-red-800 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-2">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+                        <i class="ri-restaurant-line text-lg"></i>
+                    </div>
+                    <h1 class="text-lg font-bold julius-font">Kokani Darbar Restaurant</h1>
+                </div>
+                
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="#home" class="hover:text-orange-300 transition-colors cursor-pointer text-sm julius-font">Home</a>
+                    <a href="#menu" class="hover:text-orange-300 transition-colors cursor-pointer text-sm julius-font">Menu</a>
+                    <a href="#about" class="hover:text-orange-300 transition-colors cursor-pointer text-sm julius-font">About</a>
+                    <a href="#contact" class="hover:text-orange-300 transition-colors cursor-pointer text-sm julius-font">Contact</a>
+                    <button class="bg-orange-500 hover:bg-orange-600 px-4 py-1 rounded-full text-sm font-medium transition-colors cursor-pointer whitespace-nowrap julius-font">
+                        Visit Us
+                    </button>
+                </nav>
+
+                <button class="md:hidden w-6 h-6 flex items-center justify-center cursor-pointer" id="mobile-menu-btn">
+                    <i class="ri-menu-line text-lg"></i>
+                </button>
+            </div>
+
+            <nav class="md:hidden mt-2 pb-2 border-t border-red-700 hidden" id="mobile-menu">
+                <div class="flex flex-col space-y-2 pt-2">
+                    <a href="#home" class="hover:text-orange-300 transition-colors cursor-pointer text-sm julius-font">Home</a>
+                    <a href="#menu" class="hover:text-orange-300 transition-colors cursor-pointer text-sm julius-font">Menu</a>
+                    <a href="#about" class="hover:text-orange-300 transition-colors cursor-pointer text-sm julius-font">About</a>
+                    <a href="#contact" class="hover:text-orange-300 transition-colors cursor-pointer text-sm julius-font">Contact</a>
+                    <button class="bg-orange-500 hover:bg-orange-600 px-4 py-1 rounded-full text-sm font-medium transition-colors cursor-pointer whitespace-nowrap w-fit julius-font">
+                        Visit Us
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-red-900 to-orange-800">
+        <div class="absolute inset-0 bg-black/30"></div>
+        <div class="absolute inset-0 bg-cover bg-center hero-bg"></div>
+        
+        <div class="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                Authentic Flavors of<br />
+                <span class="text-orange-400">Indian & Maxican</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-white max-w-2xl mx-auto">
+                Experience the perfect blend of Indian & Maxican cuisine at Kokani Darbar Restaurant. Unfussy, familiar, and absolutely delicious.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors cursor-pointer whitespace-nowrap">
+                    Visit Our Restaurant
+                </button>
+                <button class="border-2 border-white text-orange-800 hover:bg-gray-1800 hover:text-red-800 px-8 py-4 rounded-full text-lg font-semibold transition-colors cursor-pointer whitespace-nowrap">
+                    View Menu
+                </button>
+            </div>
+            <div class="mt-8 flex items-center justify-center space-x-6 text-sm flex-wrap gap-4">
+                <div class="flex items-center space-x-2">
+                    <i class="ri-map-pin-line text-black"></i>
+                    <span>Behind Rajjak Manzil, Doodh Bazar, Nashik</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="ri-phone-line text-orange-400"></i>
+                    <span>091723 14866</span>
+                </div>
+                <div class="flex items-center space-x-2 text-black">
+                    <i class="ri-money-rupee-circle-line text-orange-400"></i>
+                    <span>₹200-400 per person</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialties Section -->
+    <section id="menu" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-red-800 mb-4">Our Complete Menu</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    From authentic biryanis to sizzling specialties, explore our diverse menu of North Indian & Chinese dishes
+                </p>
+            </div>
+
+            <!-- Popular Items -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-red-800 mb-8 text-center">Popular Items</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="popular-items">
+                    <!-- Popular items will be loaded here by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Chicken Specialties -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-red-800 mb-8 text-center">Chicken Specialties</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="chicken-specialties">
+                    <!-- Chicken items will be loaded here by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Mutton Delicacies -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-red-800 mb-8 text-center">Mutton Delicacies</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="mutton-delicacies">
+                    <!-- Mutton items will be loaded here by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Seafood & Desserts -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-red-800 mb-8 text-center">Seafood & Desserts</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="seafood-desserts">
+                    <!-- Seafood & dessert items will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-amber-50">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold text-red-800 mb-6">
+                        Authentic Indian <br />
+                        & Maxican Cuisine
+                    </h2>
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        Kokani Darbar Restaurant has been serving delicious Indian & Maxican dishes in Nashik for years. Our unfussy approach focuses on familiar flavors and quality ingredients, making every meal a satisfying experience for our customers.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-orange-500 mb-2">433+</div>
+                            <div class="text-gray-600">Customer Reports</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-orange-500 mb-2">₹200-400</div>
+                            <div class="text-gray-600">Per Person</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-orange-500 mb-2">2</div>
+                            <div class="text-gray-600">Cuisine Types</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-orange-500 mb-2">11PM</div>
+                            <div class="text-gray-600">Closing Time</div>
+                        </div>
+                    </div>
+                    <button class="bg-red-800 hover:bg-red-900 text-white px-8 py-4 rounded-full font-semibold transition-colors cursor-pointer whitespace-nowrap">
+                        Learn More About Us
+                    </button>
+                </div>
+                <div class="relative">
+                    <img src="images/chef-cooking.jpg" alt="Chef cooking biryani" class="rounded-2xl shadow-2xl object-cover object-top w-full h-[500px]" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-red-800 mb-4">Why Choose Kokani Darbar?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Experience the perfect blend of tradition and convenience with our exceptional service and authentic flavors
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-amber-50 p-8 rounded-2xl hover:shadow-lg transition-shadow group">
+                    <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="ri-time-line text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-red-800 mb-4">30-Minute Delivery</h3>
+                    <p class="text-gray-600 leading-relaxed">Fresh, hot biryani delivered to your doorstep in 30 minutes or less</p>
+                </div>
+
+                <div class="bg-amber-50 p-8 rounded-2xl hover:shadow-lg transition-shadow group">
+                    <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="ri-shield-check-line text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-red-800 mb-4">Quality Guaranteed</h3>
+                    <p class="text-gray-600 leading-relaxed">Premium ingredients and traditional recipes ensure authentic taste every time</p>
+                </div>
+
+                <div class="bg-amber-50 p-8 rounded-2xl hover:shadow-lg transition-shadow group">
+                    <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="ri-smartphone-line text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-red-800 mb-4">Best Services</h3>
+                    <p class="text-gray-600 leading-relaxed">Our staff was well trained and very respectful behaviour with custumors</p>
+                </div>
+
+                <div class="bg-amber-50 p-8 rounded-2xl hover:shadow-lg transition-shadow group">
+                    <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="ri-customer-service-line text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-red-800 mb-4">24/7 Support</h3>
+                    <p class="text-gray-600 leading-relaxed">Dedicated customer service team available round the clock for assistance</p>
+                </div>
+
+                <div class="bg-amber-50 p-8 rounded-2xl hover:shadow-lg transition-shadow group">
+                    <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="ri-price-tag-line text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-red-800 mb-4">Best Value</h3>
+                    <p class="text-gray-600 leading-relaxed">Competitive pricing with regular offers and loyalty rewards for customers</p>
+                </div>
+
+                <div class="bg-amber-50 p-8 rounded-2xl hover:shadow-lg transition-shadow group">
+                    <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="ri-restaurant-line text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-red-800 mb-4">Multiple Locations</h3>
+                    <p class="text-gray-600 leading-relaxed">Conveniently located restaurants across the city for dine-in experiences</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-red-800 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center opacity-10 cta-bg"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center max-w-4xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Craving Authentic Flavors?
+                </h2>
+                <p class="text-xl mb-8 leading-relaxed">
+                    Visit Kokani Darbar Restaurant and experience the authentic taste of Indian & Maxican cuisine. 
+                    Located in the heart of Nashik, we're waiting to serve you!
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors cursor-pointer whitespace-nowrap">
+                        Get Directions
+                    </button>
+                    <button class="border-2 border-white text-black hover:bg-white hover:text-red-800 px-8 py-4 rounded-full text-lg font-semibold transition-colors cursor-pointer whitespace-nowrap">
+                        Call: 091723 14866
+                    </button>
+                </div>
+                
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div>
+                        <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="ri-map-pin-line text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Prime Location</h3>
+                        <p class="text-red-200">Behind Rajjak Manzil, Doodh Bazar</p>
+                    </div>
+                    <div>
+                        <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="ri-time-line text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Open Daily</h3>
+                        <p class="text-red-200">Until 11 PM</p>
+                    </div>
+                    <div>
+                        <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="ri-star-line text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Highly Rated</h3>
+                        <p class="text-red-200">Reported by 433 people</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center">
+                            <i class="ri-restaurant-line text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold pacifico-font">Kokani Darbar Restaurant</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4 leading-relaxed">
+                        Basic, unfussy restaurant serving a familiar menu of Indian & Maxican dishes with authentic flavors and quality ingredients.
+                    </p>
+                    <div class="flex space-x-4">
+                        <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors cursor-pointer">
+                            <i class="ri-facebook-fill text-lg"></i>
+                        </div>
+                        <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors cursor-pointer">
+                            <i class="ri-instagram-line text-lg"></i>
+                        </div>
+                        <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors cursor-pointer">
+                            <i class="ri-twitter-line text-lg"></i>
+                        </div>
+                        <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors cursor-pointer">
+                            <i class="ri-youtube-line text-lg"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-orange-500 transition-colors cursor-pointer">Home</a></li>
+                        <li><a href="#menu" class="text-gray-400 hover:text-orange-500 transition-colors cursor-pointer">Menu</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-orange-500 transition-colors cursor-pointer">About Us</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-orange-500 transition-colors cursor-pointer">Contact</a></li>
+                        <li><a href="#catering" class="text-gray-400 hover:text-orange-500 transition-colors cursor-pointer">Catering</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#delivery" class="text-gray-400 hover:text-orange-500 transition-colors cursor-pointer">Delivery</a></li>
+                        <li><a href="#takeout" class="text-gray-400 hover:text-orange-500 transition-colors cursor-pointer">Takeout</a></li>
+                        <li><a href="#dine-in" class="text-gray-400 hover:text-orange-500 transition-colors cursor-pointer">Dine-in</a></li>
+                        <li><a href="#party-orders" class="text-gray-400 hover:text-orange-500 transition-colors cursor-pointer">Party Orders</a></li>
+                        <li><a href="#gift-cards" class="text-gray-400 hover:text-orange-500 transition-colors cursor-pointer">Gift Cards</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contact Info</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 flex items-center justify-center mt-1">
+                                <i class="ri-map-pin-line text-orange-500"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400">Behind Rajjak Manzil, Doodh Bazar<br />Nashik, Maharashtra 422001</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 flex items-center justify-center">
+                                <i class="ri-phone-line text-orange-500"></i>
+                            </div>
+                            <p class="text-gray-400">091723 14866</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 flex items-center justify-center">
+                                <i class="ri-mail-line text-orange-500"></i>
+                            </div>
+                            <p class="text-gray-400">info@kokanidarbar.com</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 flex items-center justify-center">
+                                <i class="ri-time-line text-orange-500"></i>
+                            </div>
+                            <p class="text-gray-400">Open Daily - Closes 11 PM</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 flex items-center justify-center">
+                                <i class="ri-money-rupee-circle-line text-orange-500"></i>
+                            </div>
+                            <p class="text-gray-400">₹200–400 per person</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">
+                    © 2024 Kokani Darbar Restaurant. All rights reserved. |
+                    <br>Develop by Ayush Pagar-Web Developer </br> 
+                    <a href="#privacy" class="text-orange-500 hover:text-orange-400 ml-2 cursor-pointer">Privacy Policy</a> | 
+                    <a href="#terms" class="text-orange-500 hover:text-orange-400 ml-2 cursor-pointer">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
